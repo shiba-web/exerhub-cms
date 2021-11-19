@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exercises",
+  "info": {
+    "name": "Exercise"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "answer": {
+      "type": "richtext"
+    },
+    "difficulty": {
+      "required": false,
+      "unique": false,
+      "private": false,
+      "default": 1,
+      "min": 1,
+      "max": 10,
+      "type": "integer"
+    }
+  }
+}
