@@ -28,9 +28,13 @@
       "max": 10,
       "type": "integer"
     },
-    "subject": {
-      "model": "subject",
-      "via": "exercises"
+    "categories": {
+      "via": "exercises",
+      "collection": "category"
+    },
+    "paper": {
+      "via": "exercises",
+      "model": "paper"
     }
   }
 }

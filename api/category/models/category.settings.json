@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "parent": {
+      "via": "children",
+      "model": "category"
+    },
+    "children": {
+      "via": "parent",
+      "collection": "category"
+    },
+    "exercises": {
+      "collection": "exercise",
+      "via": "categories",
+      "dominant": true
+    },
+    "subject": {
+      "via": "categories",
+      "model": "subject"
+    }
+  }
+}
