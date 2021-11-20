@@ -7,8 +7,8 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
-    "draftAndPublish": true
+    "timestamps": ["createdAt", "updatedAt"],
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
