@@ -22,6 +22,12 @@
     "categories": {
       "via": "subject",
       "collection": "category"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "subjects",
+      "dominant": true
     }
   }
 }
