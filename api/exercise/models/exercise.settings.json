@@ -34,10 +34,6 @@
     "categories": {
       "via": "exercises",
       "collection": "category"
-    },
-    "paper": {
-      "via": "exercises",
-      "model": "paper"
     }
   }
 }
